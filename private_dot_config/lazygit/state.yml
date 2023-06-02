@@ -1,0 +1,9 @@
+lastupdatecheck: 0
+recentrepos:
+- /home/itm154/.local/share/chezmoi
+- /home/itm154/.config/nvim/lua/custom
+- /home/itm154/Repository/dotfiles
+- /home/itm154/.config/nvim
+startuppopupversion: 5
+customcommandshistory: []
+hidecommandlog: false
