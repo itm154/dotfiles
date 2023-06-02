@@ -66,12 +66,10 @@
   },
   "cpu": {
     "format": "󰻠 {usage}%",
-    "interval": 3,
     "tooltip": false
   },
   "memory": {
     "format": " {used:0.1f}G",
-    "interval": 3,
     "tooltip": false
   },
   "pulseaudio": {
