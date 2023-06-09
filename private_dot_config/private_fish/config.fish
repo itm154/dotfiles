@@ -1,6 +1,6 @@
 set -U fish_greeting
 set -x BAT_THEME 'Catppuccin-mocha'
-set -x LANG 'en_US_UTF-8'
+set -x LANG 'en_US.UTF-8'
 set -x EDITOR 'nvim'
 set -e fish_user_paths
 
