@@ -7,8 +7,8 @@ set -e fish_user_paths
 set -gx GTK_IM_MODULE 'fcitx'
 set -gx QT_IM_MODULE 'fcitx'
 set -gx SDL_IM_MODULE 'fcitx'
-set -gx SDL_VIDEODRIVER 'wayland'
-set -gx QT_QPA_PLATFORM 'wayland'
+# set -gx SDL_VIDEODRIVER 'wayland'
+# set -gx QT_QPA_PLATFORM 'wayland'
 set -gx QT_QPA_PLATFORMTHEME 'qt5ct'
 set -gx GCM_CREDENTIAL_STORE 'secretservice'
 
