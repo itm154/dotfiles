@@ -9,7 +9,7 @@ set -gx QT_IM_MODULE 'fcitx'
 set -gx SDL_IM_MODULE 'fcitx'
 # set -gx SDL_VIDEODRIVER 'wayland'
 # set -gx QT_QPA_PLATFORM 'wayland'
-set -gx QT_QPA_PLATFORMTHEME 'qt5ct'
+set -gx QT_QPA_PLATFORMTHEME 'kde'
 set -gx GCM_CREDENTIAL_STORE 'secretservice'
 
 alias rp="cd ~/Repository/"
