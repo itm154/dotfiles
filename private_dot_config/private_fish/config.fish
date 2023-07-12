@@ -15,6 +15,7 @@ set -gx GCM_CREDENTIAL_STORE 'secretservice'
 
 alias rp="cd ~/Repository/"
 alias dl="cd ~/Downloads/"
+alias vim="nvim"
 alias nvimrc="cd $HOME/.config/nvim/lua/custom/ && nvim ."
 alias hyprc="cd $HOME/.config/hypr/ && nvim $HOME/.config/hypr/"
 alias mixer="alsamixer --no-color"
