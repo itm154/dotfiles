@@ -16,6 +16,7 @@ set -gx GCM_CREDENTIAL_STORE 'secretservice'
 alias rp="cd ~/Repository/"
 alias dl="cd ~/Downloads/"
 alias vim="nvim"
+alias emacs="emacsclient -c -a 'emacs'"
 alias nvimrc="cd $HOME/.config/nvim/lua/custom/ && nvim ."
 alias hyprc="cd $HOME/.config/hypr/ && nvim $HOME/.config/hypr/"
 alias mixer="alsamixer --no-color"
@@ -36,6 +37,6 @@ set -Ux RUSTUP_HOME $HOME/.rustup
 set -Ux CARGO_HOME $HOME/.cargo
 set -x MANPAGER "sh -c 'col -bx | bat -l man -p'"
 
-set -U fish_user_paths $HOME/.local/bin $CARGO_HOME/.bin
+set -U fish_user_paths $HOME/.local/bin $CARGO_HOME/.bin $HOME/.config/emacs/bin
 
 nitch
