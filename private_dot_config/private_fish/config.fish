@@ -13,6 +13,10 @@ set -gx SDL_VIDEO_MINIMIZE_ON_FOCUS_LOSS 0
 set -gx QT_QPA_PLATFORMTHEME 'qt5ct'
 set -gx GCM_CREDENTIAL_STORE 'secretservice'
 
+set NPM_PACKAGES "$HOME/.npm-packages"
+set PATH $PATH $NPM_PACKAGES/bin
+set MANPATH $NPM_PACKAGES/share/man $MANPATH
+
 alias rp="cd ~/Repository/"
 alias dl="cd ~/Downloads/"
 alias vim="nvim"
