@@ -12,6 +12,7 @@ set -gx SDL_IM_MODULE 'fcitx'
 set -gx SDL_VIDEO_MINIMIZE_ON_FOCUS_LOSS 0
 set -gx QT_QPA_PLATFORMTHEME 'qt5ct'
 set -gx GCM_CREDENTIAL_STORE 'secretservice'
+set -gx GTK_THEME 'Catppuccin-Mocha-Standard-Rosewater-dark'
 
 set NPM_PACKAGES "$HOME/.npm-packages"
 set PATH $PATH $NPM_PACKAGES/bin
