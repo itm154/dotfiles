@@ -1,14 +1,8 @@
 {
   "layer": "top",
   "position": "top",
-  "modules-left": [
-    "clock",
-    "custom/cava",
-    "custom/playerctl"
-  ],
-  "modules-center": [
-    "wlr/workspaces"
-  ],
+  "modules-left": ["clock", "custom/cava", "custom/playerctl"],
+  "modules-center": ["wlr/workspaces"],
   "modules-right": [
     "tray",
     "cpu",
@@ -79,11 +73,7 @@
     "format-muted": " ",
     "format-bluetooth-muted": " ",
     "format-icons": {
-      "default": [
-        "",
-        "",
-        " "
-      ]
+      "default": ["", "", " "]
     },
     "on-click-middle": "amixer -D pulse set Master 1+ toggle",
     "on-scroll-up": "pamixer -i 5",
@@ -93,17 +83,7 @@
   "backlight": {
     "scroll-step": 5,
     "format": "{icon} {percent}",
-    "format-icons": [
-      "",
-      "",
-      "",
-      "",
-      "",
-      "",
-      "",
-      "",
-      ""
-    ],
+    "format-icons": ["", "", "", "", "", "", "", "", ""],
     "tooltip": false
   },
   "battery": {
@@ -114,19 +94,13 @@
     "format": "{icon} {capacity}%",
     "format-charging": " {capacity}%",
     "format-good": " {capacity}%",
-    "format-icons": [
-      "",
-      "",
-      "",
-      "",
-      ""
-    ],
+    "format-icons": ["", "", "", "", ""],
     "tooltip": false
   },
   "network": {
     "format-linked": "{ifname} (No IP) ",
     "format-wifi": " ",
-    "format-ethernet": " {ipaddr}/{cidr}",
+    "format-ethernet": " ",
     "format-disconnected": "睊 ",
     "format-alt": "{essid}: {ipaddr}/{cidr}",
     "tooltip": false
