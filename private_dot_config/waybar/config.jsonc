@@ -14,7 +14,7 @@
     "network"
   ],
   "custom/sep": {
-    "format": "",
+    "format": "󰇙",
     "tooltip": false
   },
   "wlr/workspaces": {
@@ -50,7 +50,7 @@
   },
   "clock": {
     "format": "  {:%I:%M %p} ",
-    "format-alt": "  {:%a %d %b} ",
+    "format-alt": "  {:%A 󰇙 %d %B} ",
     "tooltip": false
   },
   "tray": {
@@ -101,6 +101,7 @@
     "format-linked": "{ifname} (No IP) ",
     "format-wifi": " ",
     "format-ethernet": " ",
+    "format-disabled": "󰌙 ",
     "format-disconnected": "睊 ",
     "format-alt": "{essid}: {ipaddr}/{cidr}",
     "tooltip": false
