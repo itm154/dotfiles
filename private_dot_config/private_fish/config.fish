@@ -38,6 +38,8 @@ alias grep='grep --color=auto'
 alias egrep='egrep --color=auto'
 alias fgrep='fgrep --color=auto'
 
+alias venv-activate='source ./bin/activate.fish'
+
 set -Ux RUSTUP_HOME $HOME/.rustup
 set -Ux CARGO_HOME $HOME/.cargo
 set -x MANPAGER "sh -c 'col -bx | bat -l man -p'"
