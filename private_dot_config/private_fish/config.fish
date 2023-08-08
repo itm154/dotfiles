@@ -20,6 +20,7 @@ set MANPATH $NPM_PACKAGES/share/man $MANPATH
 
 alias rp="cd ~/Repository/"
 alias dl="cd ~/Downloads/"
+alias docs="cd ~/Documents/"
 alias vim="nvim"
 alias emacs="emacsclient -c -a 'emacs'"
 alias nvimrc="cd $HOME/.config/nvim/lua/custom/ && nvim ."
