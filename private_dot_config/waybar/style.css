@@ -37,8 +37,7 @@ window#waybar {
 
 /* Left */
 #workspaces {
-  padding-right: 10px;
-  padding-left: 10px;
+  padding: 8px;
 }
 
 #workspaces button {
@@ -46,16 +45,19 @@ window#waybar {
   color: @foreground;
   font-weight: bolder;
   transition: all 0.2s ease;
+  border-radius: 50%;
 }
 
 #workspaces button.active {
-  color: @red;
+  color: @lavender;
 }
 
 #workspaces button:hover {
-  box-shadow: @crust 0 0 0px;
-  background: @crust;
+  transition: all 0.2s ease;
+  box-shadow: @base 0 0 0px;
+  background: @base;
   text-shadow: @surface0 0 0 0px;
+  color: @lavender;
 }
 
 #custom-cava {
