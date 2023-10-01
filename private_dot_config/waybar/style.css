@@ -8,12 +8,13 @@
 
 #custom-sep {
   font-size: 18px;
-  color: @overlay0;
+  color: @surface1;
 }
 
 #custom-sep,
 #custom-playerctl,
 #custom-cava,
+#workspaces,
 #clock,
 #cpu,
 #memory,
@@ -22,52 +23,50 @@
 #network,
 #battery,
 #tray {
-  padding: 5px 8px;
+  padding: 5px 10px;
   border-style: solid;
-  background-color: shade(@surface0, 1);
+  background-color: @base;
   opacity: 1;
-  margin: 8px 0;
+  margin: 5px 0px 5px 0px;
 }
 
 window#waybar {
-  background-color: @base;
+  background: rgba(30, 30, 46, 0.5);
+  color: @base;
 }
 
 /* END-Global */
 
 /* Left */
 #workspaces {
-  padding: 8px;
+  background: @base;
+  border-radius: 12px;
 }
 
 #workspaces button {
-  border: 0;
-  color: @foreground;
-  font-weight: bolder;
-  transition: all 0.2s ease;
-  border-radius: 50%;
+  border-radius: 16px;
+  color: @surface1;
 }
 
 #workspaces button.active {
-  color: @lavender;
+  color: @pink;
+  background-color: transparent;
+  border-radius: 16px;
 }
 
 #workspaces button:hover {
-  border: 0;
-  transition: all 0.2s ease;
-  box-shadow: @base 0 0 0px;
-  background: @base;
-  text-shadow: @surface0 0 0 0px;
-  color: @lavender;
+  background-color: @pink;
+  color: @base;
+  border-radius: 100%;
 }
 
 #custom-cava {
-  border-radius: 10px;
+  border-radius: 12px;
   color: @blue;
 }
 
 #custom-playerctl {
-  border-radius: 10px;
+  border-radius: 12px;
   margin-left: 10px;
   padding-left: 10px;
   padding-right: 10px;
@@ -79,15 +78,18 @@ window#waybar {
 /* Middle */
 #clock {
   color: @sky;
-  border-radius: 10px;
-  margin: 8px 10px;
+  border-radius: 12px;
+  margin-left: 10px;
+  margin-right: 10px;
+  padding-left: 10px;
+  padding-right: 10px;
 }
 
 /* END-Middle */
 
 /* Right */
 #tray {
-  border-radius: 10px;
+  border-radius: 12px;
   margin-right: 10px;
   padding-left: 10px;
   padding-right: 10px;
