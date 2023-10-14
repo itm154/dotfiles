@@ -7,16 +7,14 @@ set -e fish_user_paths
 set -gx GTK_IM_MODULE 'fcitx'
 set -gx QT_IM_MODULE 'fcitx'
 set -gx SDL_IM_MODULE 'fcitx'
-# set -gx SDL_VIDEODRIVER 'wayland'
-# set -gx QT_QPA_PLATFORM 'wayland'
-set -gx SDL_VIDEO_MINIMIZE_ON_FOCUS_LOSS 0
-set -gx QT_QPA_PLATFORMTHEME 'qt5ct'
-set -gx GCM_CREDENTIAL_STORE 'secretservice'
-set -gx GTK_THEME 'Catppuccin-Mocha-Standard-Rosewater-dark'
 
-set NPM_PACKAGES "$HOME/.npm-packages"
-set PATH $PATH $NPM_PACKAGES/bin
-set MANPATH $NPM_PACKAGES/share/man $MANPATH
+set -gx SDL_VIDEO_MINIMIZE_ON_FOCUS_LOSS 0
+set -gx QT_STYLE_OVERRIDE 'kvantum'
+set -gx GCM_CREDENTIAL_STORE 'secretservice'
+
+# set NPM_PACKAGES "$HOME/.npm-packages"
+# set PATH $PATH $NPM_PACKAGES/bin
+# set MANPATH $NPM_PACKAGES/share/man $MANPATH
 
 alias rp="cd ~/Repository/"
 alias dl="cd ~/Downloads/"
@@ -46,5 +44,4 @@ set -Ux CARGO_HOME $HOME/.cargo
 set -x MANPAGER "sh -c 'col -bx | bat -l man -p'"
 
 set -U fish_user_paths $HOME/.local/bin $CARGO_HOME/bin $HOME/.config/emacs/bin
-
-nitch
+fish_add_path /home/itm154/.spicetify
