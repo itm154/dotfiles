@@ -20,6 +20,7 @@
 
 * {
   color: @text;
+  font-family: JetBrains Mono Nerd Font;
 }
 
 .notification-row {
