@@ -56,7 +56,17 @@ config.keys = {
 	{
 		key = "T",
 		mods = "CTRL|SHIFT",
-		action = wezterm.action.SpawnTab("DomainName"),
+		action = wezterm.action.SpawnTab("DefaultDomain"),
+	},
+	{
+		key = "J",
+		mods = "CTRL|SHIFT",
+		action = wezterm.action.ActivateTabRelative(-1),
+	},
+	{
+		key = "K",
+		mods = "CTRL|SHIFT",
+		action = wezterm.action.ActivateTabRelative(1),
 	},
 }
 
