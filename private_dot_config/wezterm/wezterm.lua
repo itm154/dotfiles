@@ -9,6 +9,7 @@ end
 config.color_scheme = "Catppuccin Mocha"
 config.font = wezterm.font("JetBrainsMono Nerd Font")
 config.font_size = 16
+config.warn_about_missing_glyphs = false
 
 config.tab_bar_at_bottom = true
 config.window_frame = {
