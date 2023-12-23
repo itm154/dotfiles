@@ -49,4 +49,9 @@ set -Ux CARGO_HOME $HOME/.cargo
 set -x MANPAGER "sh -c 'col -bx | bat -l man -p'"
 
 set -U fish_user_paths $HOME/.local/bin $CARGO_HOME/bin $HOME/.config/emacs/bin
+
 fish_add_path /home/itm154/.spicetify
+
+nitch
+
+starship init fish | source
