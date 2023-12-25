@@ -1,4 +1,6 @@
 package bang-bang
 package https://github.com/catppuccin/fish
+package https://github.com/edc/bass
 package https://github.com/jorgebucaran/autopair.fish
+package https://github.com/SRCFILE/nvm.fish
 theme default
