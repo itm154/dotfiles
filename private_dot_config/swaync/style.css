@@ -2,21 +2,21 @@
  * vim: ft=less
  */
 
-@define-color cc-bg rgba(30, 30, 46, 1.0);
+@define-color cc-bg rgba(25, 23, 36, 1);
 
-@define-color mpris-bg rgb(24, 24, 37);
+@define-color mpris-bg rgb(38, 35, 58);
 
 @define-color noti-border-color rgba(255, 255, 255, 0);
-@define-color noti-bg rgb(49, 50, 68);
-@define-color noti-bg-hover rgb(69, 71, 90);
-@define-color noti-bg-focus rgb(69, 71, 90);
-@define-color noti-close-bg rgba(69, 71, 90, 1);
-@define-color noti-close-bg-hover rgb(69, 71, 90);
-@define-color text rgb(205, 214, 244);
+@define-color noti-bg rgb(38, 35, 58);
+@define-color noti-bg-hover rgb(38, 35, 58);
+@define-color noti-bg-focus rgb(38, 35, 58);
+@define-color noti-close-bg rgba(38, 35, 58, 1);
+@define-color noti-close-bg-hover rgb(38, 35, 58);
+@define-color text rgb(224, 222, 244);
 
-@define-color bg-selected rgb(137, 180, 250);
-@define-color scale-trough rgb(245, 224, 220);
-@define-color accent rgb(243, 139, 168);
+@define-color bg-selected rgb(235, 188, 186);
+@define-color scale-trough rgb(144, 140, 170);
+@define-color accent rgb(110, 106, 134);
 
 * {
   color: @text;
@@ -41,12 +41,12 @@ scale trough {
 }
 
 scale trough highlight {
-	background-color: @bg-selected;
-	background-image: none;
+  background-color: @bg-selected;
+  background-image: none;
 }
 
 scale trough slider {
-	background-color: @bg-selected;
+  background-color: @bg-selected;
   border: 2px solid @bg-selected;
   box-shadow: none;
 }
@@ -186,7 +186,7 @@ scale trough slider {
 }
 
 .control-center-list-placeholder {
-  opacity: 0.0;
+  opacity: 0;
 }
 
 .floating-notifications {
@@ -195,7 +195,7 @@ scale trough slider {
 
 /* Window behind control center and on all other monitors */
 .blank-window {
-  background: transparent; 
+  background: transparent;
 }
 
 /*** Widgets ***/
@@ -276,17 +276,17 @@ scale trough slider {
   background-color: @noti-bg;
 }
 
-.widget-buttons-grid>flowbox>flowboxchild>button{
+.widget-buttons-grid > flowbox > flowboxchild > button {
   background: @noti-bg;
   border-radius: 12px;
 }
 
-.widget-buttons-grid>flowbox>flowboxchild>button:hover {
+.widget-buttons-grid > flowbox > flowboxchild > button:hover {
   background: @noti-bg-hover;
 }
 
 /* Menubar widget */
-.widget-menubar>box>.menu-button-bar>button {
+.widget-menubar > box > .menu-button-bar > button {
   border: none;
   background: none;
 }
@@ -307,7 +307,8 @@ scale trough slider {
   background-color: @noti-bg-hover;
 } */
 
-.topbar-buttons>button { /* Name defined in config after # */
+.topbar-buttons > button {
+  /* Name defined in config after # */
   border: none;
   background: none;
 }
@@ -324,7 +325,7 @@ scale trough slider {
 
 /* Backlight widget */
 .widget-backlight {
- background-color: @noti-bg;
+  background-color: @noti-bg;
   padding: 12px;
   margin: 12px;
   border-radius: 12px;

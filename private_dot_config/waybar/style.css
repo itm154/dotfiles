@@ -1,4 +1,5 @@
-@import "mocha.css";
+/* @import "mocha.css"; */
+@import "rose-pine.css";
 
 /* Global */
 * {
@@ -8,7 +9,7 @@
 
 #custom-sep {
   font-size: 18px;
-  color: @surface1;
+  color: @surface;
 }
 
 #custom-sep,
@@ -45,24 +46,24 @@ window#waybar {
 
 #workspaces button {
   border-radius: 16px;
-  color: @surface1;
+  color: @muted;
 }
 
 #workspaces button.active {
-  color: @pink;
+  color: @rose;
   background-color: transparent;
   border-radius: 16px;
 }
 
 #workspaces button:hover {
-  background-color: @pink;
+  background-color: @rose;
   color: @base;
   border-radius: 100%;
 }
 
 #custom-cava {
   border-radius: 12px;
-  color: @blue;
+  color: @subtle;
 }
 
 #custom-playerctl {
@@ -77,7 +78,7 @@ window#waybar {
 
 /* Middle */
 #clock {
-  color: @sky;
+  color: @foam;
   border-radius: 12px;
   margin-left: 10px;
   margin-right: 10px;
@@ -96,41 +97,41 @@ window#waybar {
 }
 
 #cpu {
-  color: @lavender;
+  color: @foam;
   border-radius: 10px 0 0 10px;
 }
 
 #memory {
-  color: @mauve;
+  color: @foam;
 }
 
 #pulseaudio {
-  color: @peach;
+  color: @gold;
 }
 
 #backlight {
-  color: @yellow;
+  color: @gold;
   border-radius: 0 10px 10px 0;
   margin-right: 10px;
 }
 
 #battery {
-  color: @sapphire;
+  color: @rose;
   border-radius: 10px 0 0 10px;
 }
 
 #battery.charging {
-  color: @yellow;
+  color: @foam;
 }
 
 @keyframes blink {
   to {
-    color: @red;
+    color: @love;
   }
 }
 
 #battery.critical:not(.charging) {
-  color: @red;
+  color: @love;
   animation-name: blink;
   animation-duration: 0.5s;
   animation-timing-function: linear;
@@ -139,7 +140,7 @@ window#waybar {
 }
 
 #network {
-  color: @green;
+  color: @rose;
   border-radius: 0 10px 10px 0;
   margin-right: 10px;
 }
