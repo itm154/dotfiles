@@ -44,8 +44,8 @@
     "on-click": "playerctl previous",
     "on-click-right": "playerctl next",
     "format-icons": {
-      "Playing": "<span foreground='#9ccfd8'></span>",
-      "Paused": "<span foreground='#eb6f92'></span>"
+      "Playing": "<span foreground='#a6e3a1'></span>",
+      "Paused": "<span foreground='#f38ba8'></span>"
     },
     "tooltip": false
   },
