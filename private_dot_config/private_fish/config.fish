@@ -32,11 +32,11 @@ alias mixer="alsamixer --no-color"
 alias gsettings="env XDG_CURRENT_DESKTOP=GNOME gnome-control-center"
 alias :q="exit"
 
-alias ls="exa -al --color=always --group-directories-first"
-alias la="exa -a --color=always --group-directories-first"
-alias ll="exa -l --color=always --group-directories-first"
-alias lt="exa -aT --color=always --group-directories-first"
-alias l.="exa -a | egrep "^\.""
+alias ls="eza -al --color=always --group-directories-first"
+alias la="eza -a --color=always --group-directories-first"
+alias ll="eza -l --color=always --group-directories-first"
+alias lt="eza -aT --color=always --group-directories-first"
+alias l.="eza -a | egrep "^\.""
 
 alias grep='grep --color=auto'
 alias egrep='egrep --color=auto'
@@ -52,6 +52,7 @@ set -U fish_user_paths $HOME/.local/bin $CARGO_HOME/bin $HOME/.config/emacs/bin
 
 fish_add_path /home/itm154/.spicetify
 
-nitch
+source /nix/var/nix/profiles/default/etc/profile.d/nix-daemon.fish
 
 starship init fish | source
+
