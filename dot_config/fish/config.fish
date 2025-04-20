@@ -24,3 +24,4 @@ set -Ux FZF_DEFAULT_OPTS "\
 --color=border:#313244,label:#cdd6f4"
 
 set -Ux MANPAGER "sh -c 'sed -u -e \"s/\\x1B\[[0-9;]*m//g; s/.\\x08//g\" | bat -p -lman'"
+set -Ux EDITOR nvim
