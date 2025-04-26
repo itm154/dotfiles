@@ -2,6 +2,7 @@
 starship init fish | source
 zoxide init fish --cmd cd | source
 fzf --fish | source
+pyenv init - fish | source
 
 # Useful aliases
 alias rp='cd ~/Repository/'
@@ -15,6 +16,8 @@ alias ll='eza -l --color=always --group-directories-first --icons'
 alias lt='eza -aT --color=always --group-directories-first --icons'
 alias l.="eza -a | grep -e '^\.'"
 
+alias :q='exit'
+
 # FZF Catppuccin Colours
 set -Ux FZF_DEFAULT_OPTS "\
 --color=bg+:#313244,bg:#1e1e2e,spinner:#f5e0dc,hl:#f38ba8 \
@@ -25,3 +28,6 @@ set -Ux FZF_DEFAULT_OPTS "\
 
 set -Ux MANPAGER "sh -c 'sed -u -e \"s/\\x1B\[[0-9;]*m//g; s/.\\x08//g\" | bat -p -lman'"
 set -Ux EDITOR nvim
+
+set -Ux PYENV_ROOT $HOME/.pyenv
+set -U fish_user_paths $PYENV_ROOT/bin $fish_user_paths
