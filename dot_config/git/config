@@ -1,0 +1,28 @@
+[user]
+	name = itm154
+	email = ashrulfahmi@gmail.com
+
+[filter "lfs"]
+	clean = git-lfs clean -- %f
+	smudge = git-lfs smudge -- %f
+	process = git-lfs filter-process
+	required = true
+
+[core]
+  compression = 9
+  whitespace = error
+  preloadindex = true
+
+[advice]
+  addEmptyPathscec = false
+  pushNonFastForward = false
+  statusHints = false
+
+[url "git@github.com:itm154/"]
+  insteadOf = "itm154:"
+
+[url "git@github.com"]
+  insteadOf = "gh:"
+
+[init]
+  defaultBranch = main
