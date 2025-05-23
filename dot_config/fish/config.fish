@@ -31,3 +31,6 @@ set -Ux EDITOR nvim
 
 set -Ux PYENV_ROOT $HOME/.pyenv
 set -U fish_user_paths $PYENV_ROOT/bin $fish_user_paths
+
+# uv
+fish_add_path "/home/itm154/.local/bin"
