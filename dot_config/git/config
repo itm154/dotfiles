@@ -26,3 +26,21 @@
 
 [init]
   defaultBranch = main
+
+[push]
+  autoSetupRemote = true
+  default = current
+
+[pull]
+  default = current
+  rebase = true
+
+[rebase]
+  autoStash = true
+  missingCommitsCheck = warn
+
+[commit]
+  gpgsign = true
+
+[user]
+  signingkey = 4EE438CD8805C386
