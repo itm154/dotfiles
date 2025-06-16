@@ -1,3 +1,6 @@
+[include]
+  path = ./catppuccin.gitconfig
+
 [user]
 	name = itm154
 	email = ashrulfahmi@gmail.com
@@ -12,6 +15,7 @@
   compression = 9
   whitespace = error
   preloadindex = true
+  pager = delta
 
 [advice]
   addEmptyPathscec = false
@@ -44,3 +48,6 @@
 
 [user]
   signingkey = 4EE438CD8805C386
+
+[delta]
+  features = catppuccin-mocha
