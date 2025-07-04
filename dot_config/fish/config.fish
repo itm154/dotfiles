@@ -31,6 +31,9 @@ set -Ux FZF_DEFAULT_OPTS "\
 set -Ux MANPAGER "sh -c 'sed -u -e \"s/\\x1B\[[0-9;]*m//g; s/.\\x08//g\" | bat -p -lman'"
 set -Ux EDITOR nvim
 
+set -Ux ELECTRON_OZONE_PLATFORM_HINT wayland
+set -Ux GTK_USE_PORTAL 1
+
 set -Ua fish_user_paths $HOME/.cargo/bin
 
 # Python shis

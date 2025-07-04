@@ -1,7 +1,9 @@
 # This file contains fish universal variable definitions.
 # VERSION: 3.0
 SETUVAR --export EDITOR:nvim
+SETUVAR --export ELECTRON_OZONE_PLATFORM_HINT:wayland
 SETUVAR --export FZF_DEFAULT_OPTS:\x2d\x2dcolor\x3dbg\x2b\x3a\x23313244\x2cbg\x3a\x231e1e2e\x2cspinner\x3a\x23f5e0dc\x2chl\x3a\x23f38ba8\x20\x2d\x2dcolor\x3dfg\x3a\x23cdd6f4\x2cheader\x3a\x23f38ba8\x2cinfo\x3a\x23cba6f7\x2cpointer\x3a\x23f5e0dc\x20\x2d\x2dcolor\x3dmarker\x3a\x23b4befe\x2cfg\x2b\x3a\x23cdd6f4\x2cprompt\x3a\x23cba6f7\x2chl\x2b\x3a\x23f38ba8\x20\x2d\x2dcolor\x3dselected\x2dbg\x3a\x2345475a\x20\x2d\x2dcolor\x3dborder\x3a\x23313244\x2clabel\x3a\x23cdd6f4
+SETUVAR --export GTK_USE_PORTAL:1
 SETUVAR --export MANPAGER:sh\x20\x2dc\x20\x27sed\x20\x2du\x20\x2de\x20\x22s/\x5cx1B\x5c\x5b\x5b0\x2d9\x3b\x5d\x2am//g\x3b\x20s/\x2e\x5cx08//g\x22\x20\x7c\x20bat\x20\x2dp\x20\x2dlman\x27
 SETUVAR --export PYENV_ROOT:/home/itm154/\x2epyenv
 SETUVAR __done_min_cmd_duration:10000
