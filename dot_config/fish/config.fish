@@ -42,4 +42,10 @@ set -U fish_user_paths $PYENV_ROOT/bin $fish_user_paths
 # bin for uv (python)
 fish_add_path "/home/itm154/.local/bin"
 
-set fish_greeting
+# WSL Specific settings
+if set -q WSL_DITRO_NAME
+    set fish_greeting
+    set -gx GALLIUM_DRIVER d3d12
+    set -gx LIBVA_DRIVER_NAME d3d12
+    set -gx GPG_TTY (tty)
+end
