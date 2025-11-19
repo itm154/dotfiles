@@ -33,6 +33,7 @@ set -Ux EDITOR nvim
 
 set -Ux ELECTRON_OZONE_PLATFORM_HINT wayland
 set -Ux GTK_USE_PORTAL 1
+set -Ux SDL_VIDEODRIVER wayland
 
 set -Ua fish_user_paths $HOME/.cargo/bin
 
