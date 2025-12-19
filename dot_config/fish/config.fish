@@ -42,6 +42,8 @@ set -U fish_user_paths $PYENV_ROOT/bin $fish_user_paths
 # bin for uv (python)
 fish_add_path "/home/itm154/.local/bin"
 
+set fish_greeting
+
 # WSL Specific settings
 if string match -q "*microsoft*" (uname -r)
     set fish_greeting
