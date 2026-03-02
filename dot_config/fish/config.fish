@@ -33,6 +33,7 @@ set -Ux EDITOR nvim
 
 set -Ux ELECTRON_OZONE_PLATFORM_HINT wayland
 set -Ux GTK_USE_PORTAL 1
+set -Ux SDL_VIDEODRIVER wayland
 
 set -Ua fish_user_paths $HOME/.cargo/bin
 
@@ -45,8 +46,7 @@ fish_add_path "/home/itm154/.local/bin"
 set fish_greeting
 
 # WSL Specific settings
-if string match -q "*microsoft*" (uname -r)
-    set fish_greeting
+if set -q WSL_DITRO_NAME
     set -gx GALLIUM_DRIVER d3d12
     set -gx LIBVA_DRIVER_NAME d3d12
     set -gx GPG_TTY (tty)
