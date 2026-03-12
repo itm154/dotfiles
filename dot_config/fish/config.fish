@@ -1,27 +1,25 @@
-# Init
+# --- Environment Variables ---
+set -gx EDITOR nvim
+set -gx MANPAGER "sh -c 'sed -u -e \"s/\\x1B\[[0-9;]*m//g; s/.\\x08//g\" | bat -p -lman'"
+set -gx ELECTRON_OZONE_PLATFORM_HINT wayland
+set -gx GTK_USE_PORTAL 1
+set -gx SDL_VIDEODRIVER wayland
+set -gx PYENV_ROOT $HOME/.pyenv
+
+# --- Path Configuration ---
+fish_add_path $PYENV_ROOT/bin
+fish_add_path $HOME/.local/bin
+fish_add_path $HOME/go/bin
+fish_add_path $HOME/.cargo/bin
+
+# --- Tool Initializations ---
 starship init fish | source
 zoxide init fish --cmd cd | source
 fzf --fish | source
 pyenv init - fish | source
 
-# Useful aliases
-alias rp='cd ~/Repository/'
-alias dl='cd ~/Downloads/'
-alias docs='cd ~/Documents/'
-
-# Replace ls with eza
-alias ls='eza -al --color=always --group-directories-first --icons'
-alias la='eza -a --color=always --group-directories-first --icons'
-alias ll='eza -l --color=always --group-directories-first --icons'
-alias lt='eza -aT --color=always --group-directories-first --icons'
-alias l.="eza -a | grep -e '^\.'"
-
-alias lg='lazygit'
-
-alias :q='exit'
-
-alias r "R_AUTO_START=true nvim"
-
+# --- UI & Theme ---
+set -g fish_greeting
 # FZF Catppuccin Colours
 set -Ux FZF_DEFAULT_OPTS "\
 --color=bg+:#313244,bg:#1e1e2e,spinner:#f5e0dc,hl:#f38ba8 \
@@ -30,25 +28,27 @@ set -Ux FZF_DEFAULT_OPTS "\
 --color=selected-bg:#45475a \
 --color=border:#313244,label:#cdd6f4"
 
-set -Ux MANPAGER "sh -c 'sed -u -e \"s/\\x1B\[[0-9;]*m//g; s/.\\x08//g\" | bat -p -lman'"
-set -Ux EDITOR nvim
+# --- Aliases ---
+# Navigation
+alias rp='cd ~/Repository/'
+alias dl='cd ~/Downloads/'
+alias docs='cd ~/Documents/'
 
-set -Ux ELECTRON_OZONE_PLATFORM_HINT wayland
-set -Ux GTK_USE_PORTAL 1
-set -Ux SDL_VIDEODRIVER wayland
+# Eza (ls replacements)
+alias ls='eza -al --color=always --group-directories-first --icons'
+alias la='eza -a --color=always --group-directories-first --icons'
+alias ll='eza -l --color=always --group-directories-first --icons'
+alias lt='eza -aT --color=always --group-directories-first --icons'
+alias l.="eza -a | grep -e '^\.'"
 
-set -Ua fish_user_paths $HOME/.cargo/bin
+# Tools
+alias lg='lazygit'
+alias r='R_AUTO_START=true nvim'
+alias :q='exit'
+alias rm='rm -i'
 
-# Python shis
-set -Ux PYENV_ROOT $HOME/.pyenv
-set -U fish_user_paths $PYENV_ROOT/bin $fish_user_paths
-# bin for uv (python)
-fish_add_path "/home/itm154/.local/bin"
-
-set fish_greeting
-
-# WSL Specific settings
-if set -q WSL_DITRO_NAME
+# --- WSL Specific Settings ---
+if set -q WSL_DISTRO_NAME
     set -gx GALLIUM_DRIVER d3d12
     set -gx LIBVA_DRIVER_NAME d3d12
     set -gx GPG_TTY (tty)
