@@ -45,7 +45,6 @@ alias l.="eza -a | grep -e '^\.'"
 alias lg='lazygit'
 alias r='R_AUTO_START=true nvim'
 alias :q='exit'
-alias rm='rm -i'
 
 # --- WSL Specific Settings ---
 if set -q WSL_DISTRO_NAME
