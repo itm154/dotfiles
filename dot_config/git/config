@@ -46,8 +46,11 @@
 [commit]
   gpgsign = true
 
+[gpg]
+	format = ssh
+
 [user]
-  signingkey = 4EE438CD8805C386
+  signingkey = ~/.ssh/id_ed25519_signing.pub
 
 [delta]
   features = catppuccin-mocha
